@@ -3,6 +3,7 @@ ob_start();
 session_start();
 include 'config.php';
 include 'header.php';
+include 'auth_admin.php';
 $sql_true=false;
 $name_error = null;
 $edit = false;
@@ -60,7 +61,7 @@ if($edit) {
 }
 ?>
 
-    <div class="right " style="padding-right: 20px">
+    <div class="content">
         <h1>Enter City To Add</h1>
         <br><br>
         <form class="form-inline" method="post" action="">
@@ -74,6 +75,9 @@ if($edit) {
             </div>
             <br>
             <br>
+            <a class="btn btn-primary" href="city.php">Cancel</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <?php
             if($edit){
                 ?>
@@ -85,9 +89,6 @@ if($edit) {
             <?php
                 }
             ?>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="btn btn-primary" href="city.php">Cancel</a>
         </form>
     </div>
 <?php

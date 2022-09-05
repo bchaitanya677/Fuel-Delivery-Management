@@ -1,5 +1,7 @@
 <?php
 include 'config.php';
+include 'auth_owner.php';
+
 
 if(isset($_GET['id'])){
     $id=$_GET['id'];

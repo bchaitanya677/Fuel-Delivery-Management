@@ -37,7 +37,7 @@ if(isset($_POST['add_fuelprice'])) {
 
 ?>
 
-    <div class="right " style="padding-right: 20px">
+    <div class=""content>
         <h1>Enter New Fuel Price</h1>
         <br><br>
         <form class="form-inline" method="post" action="">

@@ -61,7 +61,7 @@ if($edit) {
 
 ?>
 
-    <div class="right " style="padding-right: 20px">
+    <div class="content" style="text-align: center">
         <h1>Enter State To Add</h1>
         <br><br>
         <form class="form-inline" method="post" action="">
@@ -75,6 +75,9 @@ if($edit) {
             </div>
             <br>
             <br>
+            <a class="btn btn-primary" href="state.php">Cancel</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <?php
             if($edit){
                 ?>
@@ -86,9 +89,8 @@ if($edit) {
                 <?php
             }
             ?>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a class="btn btn-primary" href="state.php">Cancel</a>
+
+
         </form>
     </div>
 <?php

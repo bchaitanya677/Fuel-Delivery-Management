@@ -5,7 +5,7 @@ include 'config.php';
 include 'header.php';
 ?>
 
-<div class="right " style="padding-right: 20px">
+<div class="content">
     <h1>Total states</h1>
 
     <table id="state_table" class="table table-striped table-bordered" >
@@ -28,7 +28,7 @@ if (mysqli_num_rows($result) > 0) {
             <td><?php echo $cnt; ?></td>
             <td><?php echo $row['name']; ?></td>
             <td >
-                <div style="display: flex">
+                <div style="display: contents">
                  <a href="add-state.php?id=<?=$row['id']?>" class="btn btn-warning" >Edit</a>
                  <a class="btn btn-danger" href="state_delete.php?id=<?php echo $row['id']; ?>" >Delete</a>
                 </div>

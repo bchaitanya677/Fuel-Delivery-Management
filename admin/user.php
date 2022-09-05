@@ -5,7 +5,7 @@ include 'config.php';
 include 'header.php';
 ?>
 
-<div class="right " style="padding-right: 20px">
+<div class="content">
 <h1>Register user</h1>
 
     <table id="example" class="table table-striped table-bordered" style="width:100%">

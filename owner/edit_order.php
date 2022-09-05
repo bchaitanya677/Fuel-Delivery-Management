@@ -3,6 +3,8 @@ ob_start();
 session_start();
 include 'config.php';
 include 'fuelstationownerheader.php';
+include 'auth_owner.php';
+
 $sql_true=false;
 $name_error = null;
 $edit = false;
@@ -66,12 +68,13 @@ if($edit) {
         </div>
 <br>
 <br>
-    <button type="submit" class="btn btn-primary" name="edit_order">Update</button>
+        <a class="btn btn-primary" href="reports.php">Cancel</a>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a class="btn btn-primary" href="reports.php">Cancel</a>
-</form>
+        <button type="submit" class="btn btn-primary" name="edit_order">Update</button>
+
+        </form>
 </div>
 <?php
 //include 'footer.php';

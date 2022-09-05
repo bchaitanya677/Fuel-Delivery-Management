@@ -5,8 +5,8 @@ include 'config.php';
 include 'header.php';
 ?>
 
-<div class="right " style="padding-right: 20px">
-    <h1 >Order Status</h1>
+<div class="content">
+    <h1 >Order Status</h1><br><br>
     <div class="row ">
         <div class="col-12 grid-margin">
             <div class="card">

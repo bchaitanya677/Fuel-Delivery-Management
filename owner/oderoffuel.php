@@ -2,7 +2,9 @@
 ob_start();
 session_start();
 include 'config.php';
-include 'fuelstationownerheader.php'
+include 'fuelstationownerheader.php';
+include 'auth_owner.php';
+
 ?>
 
 <div id="content">

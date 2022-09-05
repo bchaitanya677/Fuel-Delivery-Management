@@ -3,6 +3,8 @@ ob_start();
 session_start();
 include 'config.php';
 include 'userheader.php';
+include 'auth_user.php';
+
 
 $id = $_SESSION['id'];
 $name_error=null;
@@ -60,10 +62,11 @@ if(isset($_POST['submit']))
 <div class="container">
     <h2>Order Your Fuel</h2>
 
-    <form method="post" action="">
-        <div class="row">
+    <form method="post" action="" >
+        <div class="row" >
         <div class="col-sm-3">
-            <select class="form-select" id="payment_mode" name="bunk_name">
+            <label for="bunk_name">Please select Fuel station</label>
+            <select class="form-select" id="bunk_name" name="bunk_name">
                 <?php
                 $sql2 = "SELECT * FROM `users` where `account_type` = 'FUEL_STATION'";
                 $res = mysqli_query($conn,$sql2);
@@ -76,11 +79,13 @@ if(isset($_POST['submit']))
                 }
                 ?>
             </select>
+
+            <br>
 <!--            <input type="text" class="form-control" id="bunk_name" placeholder="Enter your bunk name" name="bunk_name">-->
             <br>
             <input type="number" class="form-control" id="contact_number" placeholder="Enter your contact number" name="contact_number">
 
-            <table>
+            <table >
             <tr>
                 <td><input type="number" class="form-control" id="req_qnty" placeholder="Enter quantity in liters" name="req_qnty"></td>
                 <td><select class="form-select" id="product_type" name="product_type">
@@ -100,6 +105,8 @@ if(isset($_POST['submit']))
         </div>
     <br>
       <a href="orderyourfuel.php" class="btn btn-primary">cancle</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button class="btn btn-primary" name="submit">submit</button>
     </form>
 

@@ -66,8 +66,8 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
         <input class="form-group-sm" type="text" id="username" name="username" placeholder="fuel station name" value="<?=$edit_name?>"><br><br>
         <input class="form-group-sm" type="text" id="email" name="email" placeholder="email"  value="<?=$edit_email?>"><br><br>
         <input class="form-group-sm" type="tel" id="contactnumber" name="contactnumber" placeholder="phone number"  value="<?=$edit_ph?>"><br><br>
-        <a href="dashboard.php" class="btn btn-primary" style="">cancel</a>
+        <a href="fuelstation.php" class="btn btn-primary" style="">cancel</a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
-        <button  class="btn btn-primary" type="submit" name="submit">Add</button>
+        <button  class="btn btn-primary" type="submit" name="submit">Update</button>
     </form>
 </div>

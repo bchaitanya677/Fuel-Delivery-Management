@@ -5,8 +5,8 @@ include 'config.php';
 include 'header.php';
 ?>
 
-<div class="right " style="padding-right: 20px">
-<h1>Registered fuel station owner</h1>
+<div class="content">
+<h1>Registered fuel station owner</h1><br>
     <table id="example" class="table table-striped table-bordered" >
         <thead>
             <th style="text-align: center">id</th>

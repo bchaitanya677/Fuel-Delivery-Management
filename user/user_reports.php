@@ -3,12 +3,14 @@ ob_start();
 session_start();
 include 'config.php';
 include 'userheader.php';
+include 'auth_user.php';
+
 
 $id = $_SESSION['id'];
 ?>
 
 <div class="right " style="padding-right: 20px">
-    <div class="container">
+    <div class="container" >
         <h2 >Order Status</h2><br>
     <div class="row ">
         <div class="col-12 grid-margin">

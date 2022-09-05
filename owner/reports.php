@@ -3,12 +3,13 @@ ob_start();
 session_start();
 include 'config.php';
 include 'fuelstationownerheader.php';
+include 'auth_owner.php';
 ?>
 
 <div class="right " style="padding-right: 20px">
-    <h1 >Order Status</h1>
     <div class="container">
-    <div class="row ">
+        <h2 >Order Status</h2><br>
+        <div class="row ">
         <div class="col-12 grid-margin">
             <div class="card">
                 <div class="card-body">
@@ -72,12 +73,6 @@ include 'fuelstationownerheader.php';
         </div>
     </div>
 </div>
-<script>
-    $(document).ready(function () {
-        $('#owner_report').DataTable();
-         $('#state_table').DataTable({searching: false});
 
-    });
-</script>
 <?php
 include '../admin/footer.php';

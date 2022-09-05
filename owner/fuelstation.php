@@ -3,9 +3,11 @@ ob_start();
 session_start();
 include 'config.php';
 include 'fuelstationownerheader.php';
+include 'auth_owner.php';
+
 ?>
 
-    <div class="right " style="padding-right: 20px">
+    <div class="container">
         <h2>Fuel station</h2><br>
         <div class="container-fluid">
         <div style="float: right"> <a class="btn btn-primary" href="add_fuel_station.php">Add</a></div>
@@ -32,7 +34,7 @@ include 'fuelstationownerheader.php';
                     <td><?php echo $row['phone_number']; ?></td>
                     <td><?php echo $row['email']; ?></td>
                     <td>
-                        <a href="add_fuel_station.php?id=<?=$row['id']?>" class="btn btn-warning">Edit</a>
+                        <a href="edit_fuel_station.php?id=<?=$row['id']?>" class="btn btn-warning">Edit</a>
                         <a href="delete_fuel_station.php?id=<?=$row['id']?>" class="btn btn-danger">Delete</a></td>
                 </tr>
                 <?php

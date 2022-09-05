@@ -47,10 +47,9 @@ if(isset($_POST['submit'])){
 
 
 ?>
-<div class="right " style="padding-right: 20px">
-    <div class="container" style="text-align: center">
-    <h2>Update Profile details</h2><br>
-        <form action="" method="post" name="profile">
+<div class="content" style="text-align: center">
+    <h1>Update Profile details</h1><br><br><br>
+        <form action="" method="post" name="profile" >
             <input class="form-group-sm" type="text" id="username" name="username" placeholder="user name" value="<?=$data['user_name']?>"><br><br>
             <input class="form-group-sm" type="text" id="email" name="email" placeholder="email" value="<?=$data['email']?>"><br><br>
             <input class="form-group-sm" type="tel" id="contactnumber" name="contactnumber" placeholder="mobile number" value="<?=$data['phone_number']?>"><br><br>
@@ -58,5 +57,4 @@ if(isset($_POST['submit'])){
             <input type="hidden" name="psw" value="<?=$data['password']?>">
             <a href="dashboard.php" class="btn btn-primary">cancel</a> <button type="submit" name="submit"  class="btn btn-primary">update</button>
         </form>
-    </div>
 </div>

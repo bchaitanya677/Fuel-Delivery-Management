@@ -3,6 +3,8 @@ ob_start();
 session_start();
 include 'config.php';
 include 'userheader.php';
+include 'auth_user.php';
+
 
 $data =null;
 $name_error =null;
